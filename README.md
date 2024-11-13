@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+Weather Dashboard
+Introduction
+In this task, I built a Weather Dashboard frontend application using React that interacts with the OpenWeatherMap API to provide weather data. The application allows users to search for a city and view the current weather as well as the 5-day forecast. The goal is to demonstrate skills in building a user-friendly interface, fetching data from external APIs, and handling API responses effectively.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Search Functionality: Users can input the name of any city, and the application will fetch the current weather and a 5-day forecast.
+Weather Dashboard: Displays current weather conditions, including:
+City Name
+Temperature
+Weather Description (e.g., Clear, Cloudy, Rainy)
+Wind Speed
+Humidity
+Weather icon for visual representation
+5-Day Forecast: Provides the daily weather forecast, including temperature and weather description for the next 5 days.
+Error Handling: The application shows appropriate error messages if:
+The city is not found.
+There is an issue with the API request or network connection.
+Responsive Design: The UI is responsive and provides an optimized experience for both desktop and mobile devices.
+API to Use
+OpenWeatherMap API: The weather data is fetched from the OpenWeatherMap API.
+API URL: https://openweathermap.org/api
+You can sign up on the OpenWeatherMap website and get a free API key to access weather data.
+Technical Requirements
+Frontend (React)
+Search Functionality:
 
-## Available Scripts
+A search bar is provided where users can input a city name.
+On submitting the search, the application fetches the current weather and a 5-day forecast for the searched city from the OpenWeatherMap API.
+While the data is being fetched, a loading feedback is displayed to the user.
+Weather Dashboard:
 
-In the project directory, you can run:
+Displays the current weather for the searched city, including:
+City Name
+Temperature
+Weather Description (e.g., Clear, Cloudy, Rainy)
+Wind Speed
+Humidity
+Weather Icon representing the weather conditions.
+Shows the 5-day forecast with temperature and weather description for each day.
+Error Handling:
 
-### `npm start`
+Displays appropriate error messages if:
+The city is not found (e.g., invalid city name).
+There are issues with fetching data from the API (e.g., API request failure or invalid API key).
+Handles network errors gracefully, with clear messages guiding users to check their internet connection.
+Styling:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The app is styled using Bootstrap for quick and responsive UI design.
+The layout adapts to both desktop and mobile screens, ensuring a user-friendly experience across different devices.
+User Feedback:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The user interface provides feedback for successful data retrieval and errors.
+Error messages are displayed prominently, while loading feedback is shown during data fetch.
+The weather data is displayed clearly, ensuring it’s easy for users to understand the weather conditions.
+Getting Started
+Prerequisites
+To run the app locally, you need to have Node.js and npm installed on your machine.
 
-### `npm test`
+Install Node.js and npm:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Download and install Node.js from https://nodejs.org.
+This will also install npm (Node Package Manager) to manage project dependencies.
 
-### `npm run build`
+Install Dependencies: Navigate to the project directory and run the following command to install the necessary dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+cd weather-dashboard
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Running the App
+Once all dependencies are installed, you can run the application locally using the following command:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm start
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This will start the development server and open the app in your default web browser at http://localhost:3000.
